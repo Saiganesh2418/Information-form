@@ -1,0 +1,223 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!-- 
+    =======================================================================
+
+    This is a working contact form. To receive email, 
+    Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
+
+    Create Access Key here ðŸ'‰ https://web3forms.com/
+
+    =======================================================================
+ -->
+
+
+      <div class="m-7">
+        <form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation" novalidate>
+          <input type="hidden" name="access_key" value="eb1b7f04-514d-4578-aebb-fe38f88dae86" />
+          <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+          <input type="checkbox" name="botcheck" id="" style="display: none;" /><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="form-container">
+        <div class="form-content">
+            <h1>Personal Details</h1>
+            <form id="myForm" action="#" method="post" enctype="multipart/form-data">
+
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <div id="nameError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="fatherName">Father's Name:</label>
+                    <input type="text" id="fatherName" name="fatherName" required>
+                    <div id="fatherNameError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="motherName">Mother's Name:</label>
+                    <input type="text" id="motherName" name="motherName" required>
+                    <div id="motherNameError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname" name="surname" required>
+                    <div id="surnameError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div id="emailError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="birthdate">Birth Date:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                    <div id="birthdateError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <div id="genderError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <div id="phoneError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+                    <div id="addressError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="photo">Upload Photo:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" onchange="previewFile(this)">
+                    <div id="photoError" class="error"></div>
+                    <img id="photoPreview" src="#" alt="Photo Preview" style="display: none; max-width: 100px; margin-top: 10px;">
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I accept the terms and conditions.</label>
+                    <div id="termsError" class="error"></div>
+                </div>
+
+                <button type="submit">Submit</button>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+<style>body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column; /* Make it vertical */
+    align-items: center;
+    width: 335px; /* Adjust width as needed */
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 5px solid #BAE2EE; /* Add a skyblue border */
+}
+
+.form-content {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="file"] {
+    margin-top: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+#terms {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+label[for="terms"] {
+    display: inline-block;
+    vertical-align: middle;
+}</style><script>document.getElementById('myForm').addEventListener('submit', function(event) {
+    let isValid = true;
+
+    function validateRequired(fieldId, errorId, message) {
+        const field = document.getElementById(fieldId);
+        const error = document.getElementById(errorId);
+        if (field.value.trim() === "") {
+            error.textContent = message;
+            return false;
+        } else {
+            error.textContent = "";
+            return true;
+        }
+    }
+
+    isValid = validateRequired('name', 'nameError', 'Name is required.') && isValid;
+    isValid = validateRequired('fatherName', 'fatherNameError', "Father's Name is required.") && isValid;
+    isValid = validateRequired('motherName', 'motherNameError', "Mother's Name is required.") && isValid;
+    isValid = validateRequired('surname', 'surnameError', 'Surname is required.') && isValid;
+    isValid = validateRequired('email', 'emailError', 'Email is required.') && isValid;
+    isValid = validateRequired('birthdate', 'birthdateError', 'Birthdate is required.') && isValid;
+    isValid = validateRequired('gender', 'genderError', 'Gender is required.') && isValid;
+    isValid = validateRequired('phone', 'phoneError', 'Phone is required.') && isValid;
+    isValid = validateRequired('address', 'addressError', 'Address is required.') && isValid;
+</script>
